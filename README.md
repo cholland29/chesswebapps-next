@@ -19,7 +19,7 @@ The old repository (circa 2015, originally developed in Subversion) is preserved
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/<your-username>/ChessWebApps-Next.git
+git clone https://github.com/cholland29/ChessWebApps-Next.git
 cd ChessWebApps-Next/web
 npm install
 npm run dev
