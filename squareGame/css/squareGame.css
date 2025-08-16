@@ -1,0 +1,81 @@
+#canvas1 {
+   float: left;
+   border: 1px solid black;
+   margin-right: 10px;
+}
+
+body {
+	background-color: #C9C9C9;
+}
+
+div {
+	text-align: center;
+}
+.regularText {
+	font-size: 3em;
+}
+
+#gameConsole {
+	background-color: #C9C9C9;
+	float: left;
+	width: 40%;
+	font-size: 1em;
+}
+
+#scorePanel {
+	text-align: left;
+	border-bottom: 1px solid black;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 20px;
+	font-size: 2em;
+	font-family: monospace;
+	font-weight: bold;
+}
+#timeLabel {
+	display: inline-block;
+	text-align: left;
+
+}
+#time {
+	color: #5E0E21;
+}
+#scoreLabel {
+	display: inline-block;
+	text-align: center;
+	float: right;
+
+}
+#score {
+	color: #5E0E21;
+}
+
+#squareCoord {
+	text-align: center;
+	font-size: 6em;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+}
+
+#exclam {
+	font-size: 5em;
+	font-color: blue;
+	font-family: cursive;
+}
+
+.button {
+	border-radius: 5px;
+	border: 2px solid #6495ED;
+	background-color: #BCD2EE;
+	width: auto;
+	margin: 10px;
+	text-align: center;
+	font-size: 3em;
+}
+
+.button:active {
+	/* background-color: #666666;*/
+    position: relative;
+    top: 2px;
+}

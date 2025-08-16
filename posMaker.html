@@ -1,0 +1,120 @@
+<html>
+   <head>
+      <title>Chess Position Maker</title>
+      <link type="text/css" rel="stylesheet" href="posMaker/css/posMaker.css"/>
+      <script src"commons/thirdParty/modernizr-2.6.2.js"></script>
+      <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">-->
+      <script src="commons/thirdParty/jquery-1.8.3.min.js"></script>
+      <script src="commons/thirdParty/jscolor/jscolor.js"></script>
+      <script src="commons/utils.js"></script>
+      <script src="commons/chess/canvasutils.js"></script>
+      <script src="commons/chess/canvasWidgets.js"></script>
+      <script src="commons/chess/sprite.js"></script>
+      <script src="commons/chess/piece.js"></script>
+      <script src="commons/chess/pieceManager.js"></script>
+      <script src="commons/chess/pgn.js"></script>
+      <script src="commons/chess/board.js"></script>
+      <script src="posMaker/js/gui.js"></script>
+      <script src="posMaker/js/settings.js"></script>
+      <script src="posMaker/js/posMaker.js"></script>
+   </head>
+
+   <body>
+      <div id="editMode"></div>
+      <div id="pieceSelection"></div>
+      <div id="canvasContainer">
+      	<canvas id="canvas1"></canvas>
+         <div class="analysis" id="analysisDisplay"></div>
+      </div>
+      <div id="rightbar">
+      <img id="spriteSheet_60_alpha" src="posMaker/images/spriteSheet_60_alpha.png" />
+      <div id="settings">
+
+         <div id="boardSettingsFlip" class="flipButton">
+          Board Settings
+         </div>
+         <div id="boardSettingsPanel">
+            <div>
+            Dark Square Color: <input class="color" id="darkSquareColorPicker" value="#808080">
+            </div>
+            <div>
+            Light Square Color: <input class="color" id="lightSquareColorPicker" value = "#FFFFFF">
+            </div>
+            <div>
+            Algebraic Coordinates: 
+            <select id="selectAlgCoords" value = "#FFFFFF">
+               <option value="none">none</option>
+               <option value="inside">inside</option>
+               <option value="outside" selected="selected">outside</option>
+            </select>
+            </div>
+            <div>
+            <input type="checkbox" id="flipBoard">  Flip Board
+            </div>
+          </div>
+
+         <div id="highlightSettingsFlip" class="flipButton">
+          Highlight Settings
+         </div>
+         <div id="highlightSettingsPanel">
+            <div>
+            Highlight Color: <input class="color" id="highlightSquareColorPicker" value = "#44FF1F">
+            </div>
+         </div>
+
+         <div id="arrowSettingsFlip" class="flipButton">
+          Arrow Settings
+         </div>
+         <div id="arrowSettingsPanel">
+            <div>
+            Arrow Head Color: <input class="color" id="arrowHeadColorPicker" value = "#1AD920">
+            </div>
+            <div>
+            Arrow Stem Color: <input class="color" id="arrowStemColorPicker" value = "#1AD920">
+            </div>
+            <div>
+              Arrow Stem Width: <input id="arrowStemWidth" value = "5">
+            </div>
+            <div>
+              Arrow Transparency [0-1]: <input id="arrowTransparency" value = "1.0">
+            </div>
+            <div>
+            Arrow Head Types: 
+            <select id="arrowHeadTypeSelect" value = "#FFFFFF">
+               <option value="0">unfilled head</option>
+               <option value="1" selected="selected">filled straight</option>
+               <option value="2">filled curved arcTo</option>
+               <option value="3">filled curved quadratic</option>
+               <option value="4">filled curved bezier</option>
+            </select>
+            </div>
+            <div>
+              Arrow Head Length: <input id="arrowHeadLength" value = "25">
+            </div>
+            <div>
+              Arrow Head Degree: <input id="arrowHeadDegree" value = ".3925">
+            </div>
+         </div>
+
+      </div>
+      <div id="navbar">
+         <div class="button" id="startPosition">Start Position</div>
+         <div class="button" id="clearPosition">Clear Position</div>
+         <div class="button" id="removeArrowBut">Remove Arrow</div>
+         <div class="button" id="exportPng">Export To PNG</div>
+         <div class="button" id="saveFen">Save Fen</div>
+         <div class="button" id="recordPgn">Record PGN</div>
+         <input type="text" id="fenLoader" value="Enter Fen"/>
+      </div>
+      </div>
+
+      <div id="linkPanel">
+      </div>
+      <div class="textAreaLabel">Instructions</div>
+      <textarea id="instructionsTextArea" cols="29">Enter Instructions Here</textarea>
+      
+      <div class="textAreaLabel">Analysis</div>
+      <textarea id="analysisTextArea" cols="29">Enter Analysis Here</textarea>
+      
+   </body>
+</html>
