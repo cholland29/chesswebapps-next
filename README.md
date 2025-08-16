@@ -1,6 +1,6 @@
 # ChessWebApps-Next
 
-This is the **modern continuation** of my original [ChessWebApps-Original](https://github.com/<your-username>/ChessWebApps_Original) project.  
+This is the **modern continuation** of my original [ChessWebApps-Original](https://github.com/cholland29/ChessWebApps_Original) project.  
 The old repository (circa 2015, originally developed in Subversion) is preserved for posterity, while this repo focuses on **modernizing the concept** with up-to-date technologies.
 
 ## Goals
